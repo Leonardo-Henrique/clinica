@@ -1,0 +1,122 @@
+body{
+	background: #fefefe;
+}
+
+/* content*/
+.content{
+	width: 100%;
+	padding: 2% 4%;
+}
+.content h1{
+	margin-top: 2%;
+	font-size: 1.7em;
+	font-weight: 900;
+	opacity: .7;
+}
+.content p{
+	opacity: .6;
+	max-width: 40%;
+	margin-top: 2%;
+}
+
+.medicos{
+	margin-top: 3%;
+	padding: 2% 0;
+}
+.medico-box{
+	display: inline-block;
+	margin-bottom: 2%;
+	margin-right: 1%;
+	position: relative;
+	float: left;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	width: 24%;
+	transition: .3s;
+}
+.medico-box:hover{border-bottom: 1px solid #40ccf7; box-sizing: border-box!important;}
+.medico-thumb{
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+.medico-info{
+	width: 100%;
+	padding: 1% 2% 2% 2%;
+}
+.medico-info h3{
+	margin-bottom: 2%;
+	opacity: .8;
+}
+.medico-info p{
+	font-size: 0.9em;
+	width: 100%;
+	display: inline;
+}
+
+/* MODAL */
+.modal{
+	z-index: 999;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(0,0,0,0.95);	
+}
+.modal-box{
+	margin: 0 auto;
+	width: 60%;
+	height: 50%;
+	background: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.modal-box a{
+	position: relative;
+	margin: -0.5% 1%;
+	float: right;
+	font-size: 1.7em;
+}
+.modal-conteudo{
+	padding: 2% 4%;
+	width: 100%;
+	height: 100%;
+}
+.modal-conteudo h3, .modal-conteudo p{
+	display: inline;
+}
+.modal-conteudo h3{
+	color: #40ccf7;
+	margin-right: 1%;
+}
+
+.atendimento-info{
+	float: left;
+	margin-top: 5%;
+	width: 60%;
+}
+.atendimento-info h1{
+	opacity: .7;
+	font-size: 1.32em;
+}
+.atendimento-info p{
+	width: 100%;
+	display: inline-block;
+	padding: 1%;
+}
+
+.marcar-consulta{
+	float: left;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	padding-left: 2%;
+	height: 50%;
+}
+.marcar-consulta a{
+	font-size: 1.15em;
+	margin-top: 3%;
+}
+.marcar-consulta span{
+	display: inline;
+}

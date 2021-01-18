@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Agende sua consulta</title>
+
+		<!-- STYLE -->
+		<link rel="stylesheet" type="text/css" href="css/default-style.css">
+		<link rel="stylesheet" type="text/css" href="css/style-agendar.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		<!-- STYLE -->
+
+		<!-- SCRIPTS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<!-- SCRIPTS -->
+
+	</head>
+
+	<body>
+
+		<header>
+
+				<div class="logo">
+					<a href="index.html"><img src="img/logob.png"></a>
+				</div><!-- LOGO -->
+
+				<nav>
+					<ul class="menu-b">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="especialidades.html">Especialidades</a></li>
+						<li><a href="">Fotos</a></li>
+						<li><a href="">Sobre a clínica</a></li>
+						<li><a href="">Agende sua consulta</a><div class="ativo"></div></li>
+					</ul><div class="clear"></div>
+				</nav>
+
+			</header>
+
+			<section class="content">
+
+				<p><a href="index.html">Início</a> > <a href="especialidades.html">Especialidades</a> > Agendar consulta </p>
+
+				<h1>Agende sua consulta agora mesmo</h1>
+
+				<p>Basta preencher alguns dados no formulário abaixo. Assim que pudermos, responderemos pelo e-mail ou telefone informados confirmando a consulta.</p>
+
+				<form action="" method="post">
+
+					<label for="nome"><p>Nome completo</p></label>
+					<input type="text" name="nome" placeholder="Ex: Márcia Silva da Costa">
+
+					<label for="rg"><p>Seu RG</p></label>
+					<input type="text" name="rg" placeholder="Ex: 123453223">
+
+					<label for="email"><p>Seu melhor e-mail</p></label>
+					<input type="email" name="email" placeholder="Ex: seuemail@servidor.com">
+
+					<label for="convenio"><p>Possui convênio?</p></label>
+					<select name="convenio">
+						<option selected>Não possuo convênio</option>
+						<option>Sim, Bradesco Saúde</option>
+						<option>Sim, Planserv</option>
+						<option>Sim, Amil</option>
+					</select>
+
+
+					<label for="especialidade"><p>Selecione a especialidade que deseja</p></label>
+					<select name="especialidade">
+						<option>Endocrinologista</option>
+						<option>Cardiologista</option>
+						<option>Oftalmologista</option>
+					</select>
+
+					<label for="mensagem"><p>Há alguma observação ou detalhe a acrescentar? Aproveite o espaço abaixo</p></label>
+					<textarea name="mensagem"></textarea>
+
+
+
+				</form><!-- FORM DE AGENDAMENTO -->
+
+			</section><!-- CONTENT -->
+
+		<div class="clear"></div>
+		<section class="footer-section-b">
+
+			<span class="seta"></span>
+
+			<footer>
+
+				<div class="logo-footer">
+					<img src="img/logo.png">
+				</div>
+
+				<div class="info-footer">
+					<nav class="menu-nav">
+						<ul>
+							<h1>Da clínica</h1>
+							<li><a href="">marque uma consulta</a></li>
+							<li><a href="">sobre</a></li>
+							<li><a href="">contato</a></li>
+						</ul>
+					</nav>
+
+					<nav class="menu-nav">
+						<ul>
+							<h1>Informe-se</h1>
+							<li><a href="">especialidades</a></li>
+							<li><a href="">nossos médicos</a></li>
+							<li><a href="">cartões de crédito aceitos</a></li>
+						</ul>
+					</nav>
+
+
+				</div><!-- INFO FOOTER -->
+
+				<p>Rua Acosta Silva, n° 500, Clínica &copy Todos os direitos reservados</p>
+
+				<div class="clear"></div>
+				
+			</footer>
+
+		</section><!-- FOOTER SECTION -->
+
+
+		<!-- EFFECTS -->
+		<script type="text/javascript">
+			window.sr = ScrollReveal();
+				sr.reveal('.ativo', {
+				  origin:'top',
+				  duration: 1000,
+				  delay: 400
+				});
+				sr.reveal('.convenio-box', {duration: 2500});
+		</script>
+	</body>
+
+</html>

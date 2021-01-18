@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title></title>
+
+		<!-- STYLE -->
+		<link rel="stylesheet" type="text/css" href="css/default-style.css">
+		<link rel="stylesheet" type="text/css" href="css/style-home.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		<!-- STYLE -->
+
+		<!-- SCRIPTS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script type="text/javascript" src="js/jcarousellite.js"></script>
+
+		<script>
+			$(function(){
+			   $('.section-main').each(function(){
+			      var $sec = $(this);
+			      $(window).on('scroll',function() {
+			         var yPos = -($(window).scrollTop()/3);  // no lugar de "3", quanto maior o valor, mais lento o movimento do background
+			         $sec.css('background-position', '0 '+ yPos +'px');
+			      }); 
+			   });
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+		    $(".carrossel"). jCarouselLite({
+		        btnPrev: '.prev', 
+		        btnNext: '.next',
+		        visible: 3
+		    })
+		})
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+			    function filterPath(string) {
+			        return string
+			            .replace(/^\//, '')
+			            .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+			            .replace(/\/$/, '');
+			    }
+			    $('a[href*=#]').each(function () {
+			        if (filterPath(location.pathname) == filterPath(this.pathname)
+			                && location.hostname == this.hostname
+			                && this.hash.replace(/#/, '')) {
+			            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+			            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+			            if ($target) {
+			                var targetOffset = $target.offset().top;
+			                $(this).click(function () {
+			                    $('html, body').animate({scrollTop: targetOffset}, 300);
+			                    return false;
+			                });
+			            }
+			        }
+			    });
+			});
+		</script>
+
+		<!-- SCRIPTS -->
+
+	</head>
+
+	<body>
+
+		<section class="section-main">
+
+			<header>
+
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png"></a>
+				</div><!-- LOGO -->
+
+				<nav>
+					<ul class="menu">
+						<li><a href="index.html">Início</a><div class="ativo"></div></li>
+						<li><a href="especialidades.html">Especialidades</a></li>
+						<li><a href="">Fotos</a></li>
+						<li><a href="">Sobre a clínica</a></li>
+						<li><a href="agendar-consulta.html">Agende sua consulta</a></li>
+					</ul><div class="clear"></div>
+				</nav>
+
+			</header>
+
+			<section class="call-to-action-main">
+
+				<h1>Precisa de uma consulta?</h1>
+
+				<p>A melhor equipe médica de Seabra está pronta para lhe atender</p>
+
+				<div class="btns">
+
+					<button class="btn-call-to-action-main btn-style"><a href="especialidades.html">Veja nossas especialidades</a></button>
+
+					<button class="btn-metade btn-style"><a href="#infosUteis">Informações úteis</a></button>
+
+					<button class="btn-metade btn-style"><a href="#conveniosAceitos">Convenios aceitos</a></button>
+
+				</div>
+
+			</section><!-- CALL TO ACTION MAIN -->
+			
+		</section><!-- 1ª section -->
+
+		<a name="infosUteis"></a>
+		<section class="second-section">
+
+			<article class="second-section-apr">
+				
+				<h1 class="h1-effect">Informações essenciais para você
+					<div class="s-c-a-quadro"></div>
+				</h1>
+
+			</article><!-- TEXTO DE APRESENTAÇÃO -->
+
+			<section class="infos-uteis">
+
+				<article class="bloco-info">
+					<div class="bloco-img">
+						<img src="img/documento-preciso.png" alt="O que é preciso levar para a consulta?">
+					</div>
+					<h1>O que preciso levar para consulta?</h1>
+					<p>É indispensável levar RG, CPF ou outro documento de indentificação. Desta forma você garante um atendimento rápido.</p>
+				</article>
+
+
+				<article class="bloco-info">
+					<div class="bloco-img">
+						<img src="img/horario-atendimento.png">
+					</div>
+					<h1>Qual o horário de atendimento da clínica?</h1>
+					<p>Começamos atender de segunda a sextas às 7h da manhã. Aos sábados a partir de 9h da manhã.</p>
+				</article>
+				
+				<article class="bloco-info">
+					<div class="bloco-img">
+						<img src="img/formas-pagamento.png">
+					</div>
+					<h1>Como posso pagar pela consulta <br> ou demais procedimentos?</h1>
+					<p>Aceitamos diversas marcas de <a href="">cartões de crédito</a> e boleto bancário</p>
+				</article>
+
+				<article class="bloco-info">
+					<div class="bloco-img">
+						<img src="img/convenios-aceitos.png">
+					</div>
+					<h1>A clínica aceita convênios?</h1>
+					<p>Sim :) Somos parceira de diversos convênios. <br>Abaixo está a lista deles.</p>
+				</article>
+				
+			</section><!-- INFOS UTEIS -->
+			
+
+		</section><!-- SEGUNDA SECTION -->
+
+		<a name="conveniosAceitos"></a>
+		<section class="convenios">
+			
+			<article class="convenios-apr">
+				
+				<h1 class="h1-effect">Convênios que aceitamos
+					<div class="s-c-a-quadro"></div>
+				</h1>
+
+				<p class="p-effect">Clique sobre o seu convênio para conhecer as especialidades que ele atende</p>
+
+			</article><!-- TEXTO DE APRESENTAÇÃO -->
+
+				<section class="convenios-info">
+
+					<div class="vertical-align">
+					
+						<article class="convenio-box">
+
+							<div class="convenio-box-img">
+								<a href=""><img src="img/bradesco-convenio.png"></a>
+							</div>
+
+						</article><!-- CONVENIO BOX -->
+
+						<article class="convenio-box">
+
+							<div class="convenio-box-img">
+								<a href=""><img src="img/planserv-convenio.png"></a>
+							</div>
+
+						</article><!-- CONVENIO BOX -->
+
+						<article class="convenio-box">
+
+							<div class="convenio-box-img">
+								<a href=""><img src="img/amil-convenio.png"></a>
+							</div>
+
+						</article><!-- CONVENIO BOX -->
+
+					</div><!-- VERTICAL ALIGN -->
+
+				</section><!-- CONVENIO INFO -->
+
+				
+
+		</section><!-- TERCEIRA SECTION / CONVENIOS -->
+
+		<section class="depoimentos">
+
+			<article class="depoimentos-apr">
+				
+				<h1 class="h1-effect">Opinião de nossos pacientes
+					<div class="s-c-a-quadro"></div>
+				</h1>
+
+				<p class="p-effect">Saiba o que nossos clientes dizem sobre nosso atendimento :)</p>
+
+			</article><!-- TEXTO DE APRESENTAÇÃO -->
+
+			<section class="carrossel">
+
+				<ul>
+					<li>
+						<span>Helena Goes</span>
+						<p>"Gostei muito do atendimento"</p>
+					</li><!-- DEPOIMENTO BOX -->
+					<li>
+						<span>Juliana Fernandes</span>
+						<p>"10/10"</p>
+					</li>
+					<li>
+						<span>Camila Ribeiro</span>
+						<p>"Melhor clínica da região"</p>
+					</li>
+					<li>
+						<span>Stephane Oliveira</span>
+						<p>"Médicos superatenciosos"</p>
+					</li>
+					<li>
+						<span>Marcelo Souza</span>
+						<p>"Consultas baratas que as outras clínicas"</p>
+					</li>
+				</ul>	
+				
+				<div class="bloco-dep"></div>
+
+			</section><!-- CARROSSEL DEPOIMENTOS -->
+
+			<nav class="menu-carrossel">
+				<a href="#" class="prev btn-scroll" title="Anterior"><</a>
+				<a href="#" class="next btn-scroll" title="Próximo">></a>
+			</nav>
+			
+		</section><!-- QUARTA SECTION / DEPOIMENTOS -->
+
+		<section class="footer-section">
+
+			<span class="seta"></span>
+
+			<footer>
+
+				<div class="logo-footer">
+					<img src="img/logo.png">
+				</div>
+
+				<div class="info-footer">
+					<nav class="menu-nav">
+						<ul>
+							<h1>Da clínica</h1>
+							<li><a href="">marque uma consulta</a></li>
+							<li><a href="">sobre</a></li>
+							<li><a href="">contato</a></li>
+						</ul>
+					</nav>
+
+					<nav class="menu-nav">
+						<ul>
+							<h1>Informe-se</h1>
+							<li><a href="">especialidades</a></li>
+							<li><a href="">nossos médicos</a></li>
+							<li><a href="">cartões de crédito aceitos</a></li>
+						</ul>
+					</nav>
+
+
+				</div><!-- INFO FOOTER -->
+
+				<p>Rua Acosta Silva, n° 500, Clínica &copy Todos os direitos reservados</p>
+
+				<div class="clear"></div>
+				
+			</footer>
+
+		</section><!-- FOOTER SECTION -->
+
+		<!-- EFFECTS -->
+		<script type="text/javascript">
+			window.sr = ScrollReveal();
+				sr.reveal('.bloco-info', {
+				  origin:'left',
+				  duration: 1500,
+				  delay: 500
+				});
+				sr.reveal('.h1-effect', {
+				  origin:'top',
+				  duration: 1000,
+				  delay: 100
+				});
+				sr.reveal('.p-effect', {
+				  origin:'left',
+				  duration: 1300
+				});
+				sr.reveal('.s-c-a-quadro', {
+				  origin:'top',
+				  duration: 1200
+				});
+				sr.reveal('.ativo', {
+				  origin:'top',
+				  duration: 1000,
+				  delay: 400
+				});
+				sr.reveal('.convenio-box', {duration: 2500});
+		</script>
+
+	</body>
+
+</html>

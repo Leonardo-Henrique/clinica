@@ -1,0 +1,49 @@
+.clear{
+	clear: both;
+}
+
+/* content*/
+.content{
+	width: 100%;
+	padding: 2% 4%;
+}
+.content h1{
+	margin-top: 2%;
+	font-size: 1.7em;
+	font-weight: 900;
+	opacity: .7;
+}
+.content p{
+	opacity: .6;
+	max-width: 40%;
+	margin-top: 2%;
+}
+
+/* ===== FORM ====*/
+form{
+	width: 100%;
+	padding: 2%;
+}
+form p{
+	width: 80%;
+	font-size: 1.3em;
+}
+input{
+	margin-top: 1%;
+	padding: 0.5% 1%;
+	border: 1px solid rgba(0,0,0,0.12);
+	width: 80%;
+}
+select{
+	margin-top: 1%;
+	padding: 0.5% 1%;
+	border: 1px solid rgba(0,0,0,0.12);
+	width: 20%;	
+}
+textarea{
+	padding: 0.5% 1%;
+	width: 80%;
+	height: 80px;
+	margin-top: 1%;
+	border: 1px solid rgba(0,0,0,0.12);
+}
